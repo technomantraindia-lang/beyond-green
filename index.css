@@ -743,7 +743,7 @@ section {
 .ecosystem-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -850,7 +850,7 @@ section {
 /* On Desktop (min-width: 1200px), enforce strict pixel positioning */
 @media (min-width: 1200px) {
   .ecosystem-wrapper {
-    width: 1100px;
+    width: 1400px;
     height: 500px;
   }
   
@@ -881,7 +881,7 @@ section {
   }
   
   .ecosystem-col.right-col {
-    left: 750px;
+    left: 1050px;
     top: 0;
     align-items: flex-start;
     text-align: left;
@@ -889,7 +889,7 @@ section {
   
   .ecosystem-hub {
     position: absolute;
-    left: 350px;
+    left: 500px;
     top: 0;
     width: 400px;
     height: 500px;
