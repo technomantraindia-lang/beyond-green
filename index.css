@@ -796,8 +796,8 @@ section {
 }
 
 .hub-diamond-wrapper {
-  width: 220px;
-  height: 220px;
+  width: 210px;
+  height: 240px;
   position: relative;
   filter: drop-shadow(0 12px 30px rgba(19, 58, 39, 0.07));
   transition: transform var(--transition-normal);
@@ -811,7 +811,7 @@ section {
   width: 100%;
   height: 100%;
   background: #000000; /* Outer black color acts as border */
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -827,7 +827,7 @@ section {
   right: 3px;
   bottom: 3px;
   background: var(--bg-white);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   z-index: 1;
 }
 
@@ -901,6 +901,27 @@ section {
   .eco-card {
     width: 340px !important;
     height: 140px !important;
+  }
+  
+  /* Hexagon offsets to shift top/bottom cards inwards and middle cards outwards */
+  .left-col .eco-card.card-1 {
+    transform: translateX(65px);
+  }
+  .left-col .eco-card.card-2 {
+    transform: translateX(-15px);
+  }
+  .left-col .eco-card.card-3 {
+    transform: translateX(65px);
+  }
+  
+  .right-col .eco-card.card-4 {
+    transform: translateX(-65px);
+  }
+  .right-col .eco-card.card-5 {
+    transform: translateX(15px);
+  }
+  .right-col .eco-card.card-6 {
+    transform: translateX(-65px);
   }
 }
 
