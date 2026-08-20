@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beyond Green & Nature - Premium landscape design, execution, and maintenance. Transforming outdoors, enriching lives with timeless green spaces.">
+  <title>Beyond Green & Nature | Premium Landscape Solutions</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Favicon / Site Icon -->
+  <link rel="icon" type="image/png" href="images%20and%20videos/bg%20%20logo.png">
+</head>
+<body>
+
+  <!-- Premium Animated Preloader / Splash Screen -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img class="preloader-logo" src="images%20and%20videos/bg%20%20logo.png" alt="Beyond Green Logo">
+        <div class="preloader-sheen"></div>
+      </div>
+      <span class="preloader-tagline">Design &bull; Execute &bull; Maintain</span>
+      <div class="preloader-track">
+        <div class="preloader-bar"></div>
+      </div>
+      <span class="preloader-status">Loading Beyond Green & Nature...</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="images%20and%20videos/bg%20%20logo.png" alt="Beyond Green & Nature Logo">
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li class="dropdown">
+          <span class="nav-link dropdown-trigger">
+            Services
+            <svg viewBox="0 0 24 24">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </span>
+          <ul class="dropdown-menu">
+            <li><a href="#services" class="dropdown-item">Landscape Design</a></li>
+            <li><a href="#services" class="dropdown-item">Garden Execution</a></li>
+            <li><a href="#services" class="dropdown-item">AMC Services</a></li>
+            <li><a href="#services" class="dropdown-item">Vertical Gardening</a></li>
+          </ul>
+        </li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="cta-header-btn">
+        Get Free Site Visit
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#" class="nav-link active" onclick="toggleMenu()">Home</a>
+    <a href="#about" class="nav-link" onclick="toggleMenu()">About</a>
+    <div class="dropdown" id="mobileDropdown">
+      <span class="nav-link dropdown-trigger" onclick="toggleMobileDropdown(event)">
+        Services
+        <svg width="12" height="12" viewBox="0 0 24 24" style="margin-left: 5px;">
+          <path fill="white" d="M7 10l5 5 5-5z"/>
+        </svg>
+      </span>
+      <ul class="dropdown-menu">
+        <li><a href="#services" class="dropdown-item" onclick="toggleMenu()">Landscape Design</a></li>
+        <li><a href="#services" class="dropdown-item" onclick="toggleMenu()">Garden Execution</a></li>
+        <li><a href="#services" class="dropdown-item" onclick="toggleMenu()">AMC Services</a></li>
+        <li><a href="#services" class="dropdown-item" onclick="toggleMenu()">Vertical Gardening</a></li>
+      </ul>
+    </div>
+    <a href="#projects" class="nav-link" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" class="nav-link" onclick="toggleMenu()">Contact</a>
+    <a href="#contact" class="cta-header-btn" style="margin-top: 1rem;" onclick="toggleMenu()">
+      Get Free Site Visit
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <!-- Background Video Banner -->
+    <video class="hero-video-bg" autoplay loop muted playsinline>
+      <source src="images%20and%20videos/hero_bg_video.mp4" type="video/mp4">
+    </video>
+    
+  </section>
+
+  <!-- Why Choose Us Section (Ecosystem Layout & Stats) -->
+  <section class="why-choose-us" id="why-choose-us">
+    
+    <!-- Secondary White Stats Banner -->
+    <div class="stats-banner-container" style="margin-bottom: 2.5rem; width: 100%; max-width: 1400px; padding: 0 4%;">
+      
+      <div class="banner-brand">
+        <h2 class="banner-tagline">Design • Execute • Maintain</h2>
+        <p class="banner-subtagline">Your Vision. Our Passion. Timeless Green Spaces.</p>
+      </div>
+      
+      <div class="banner-stats">
+        
+        <div class="banner-stat-item">
+          <div class="banner-stat-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 11l2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="banner-stat-text">
+            <span class="banner-stat-num" data-count="12">12+</span>
+            <span class="banner-stat-label">Years of Experience</span>
+          </div>
+        </div>
+
+        <div class="banner-stat-item">
+          <div class="banner-stat-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <div class="banner-stat-text">
+            <span class="banner-stat-num" data-count="850">850+</span>
+            <span class="banner-stat-label">Projects Delivered</span>
+          </div>
+        </div>
+
+        <div class="banner-stat-item">
+          <div class="banner-stat-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="banner-stat-text">
+            <span class="banner-stat-num" data-count="120">120+</span>
+            <span class="banner-stat-label">Happy Clients</span>
+          </div>
+        </div>
+
+        <div class="banner-stat-item">
+          <div class="banner-stat-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <circle cx="12" cy="11" r="3"></circle>
+            </svg>
+          </div>
+          <div class="banner-stat-text">
+            <span class="banner-stat-num" data-count="25">25+</span>
+            <span class="banner-stat-label">Landscaping Experts</span>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+    <div class="section-header">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">Excellence You Can See. Quality You Can Trust.</h2>
+      <div class="leaf-divider">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"/>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="ecosystem-wrapper">
+      <!-- SVG Connectors Layer (Visible on Desktop) -->
+      <svg class="ecosystem-svg-layer" viewBox="0 0 1100 500" preserveAspectRatio="none">
+        <!-- Connecting paths -->
+        <!-- Path 1 (Top Left) -->
+        <path class="eco-path path-1" d="M 350,80 L 440,80 L 485,185 L 495,195" />
+        <!-- Path 2 (Middle Left) -->
+        <path class="eco-path path-2" d="M 350,250 L 425,250 L 440,250" />
+        <!-- Path 3 (Bottom Left) -->
+        <path class="eco-path path-3" d="M 350,420 L 440,420 L 485,315 L 495,305" />
+        
+        <!-- Path 4 (Top Right) -->
+        <path class="eco-path path-4" d="M 750,80 L 660,80 L 615,185 L 605,195" />
+        <!-- Path 5 (Middle Right) -->
+        <path class="eco-path path-5" d="M 750,250 L 675,250 L 660,250" />
+        <!-- Path 6 (Bottom Right) -->
+        <path class="eco-path path-6" d="M 750,420 L 660,420 L 615,315 L 605,305" />
+
+        <!-- Node points offset outside the Diamond boundaries -->
+        <circle class="eco-node node-1 color-green" cx="485" cy="185" r="6" />
+        <circle class="eco-node node-2 color-blue" cx="425" cy="250" r="6" />
+        <circle class="eco-node node-3 color-green" cx="485" cy="315" r="6" />
+        <circle class="eco-node node-4 color-green" cx="615" cy="185" r="6" />
+        <circle class="eco-node node-5 color-blue" cx="675" cy="250" r="6" />
+        <circle class="eco-node node-6 color-orange" cx="615" cy="315" r="6" />
+      </svg>
+
+      <div class="ecosystem-container">
+        
+        <!-- Left Side Cards (1, 4, 5) -->
+        <div class="ecosystem-col left-col">
+          
+          <!-- Card 1 (Top Left) -->
+          <div class="eco-card card-1" data-index="1">
+            <div class="eco-card-header">
+              <span class="eco-card-num">1. CUSTOMIZED SOLUTIONS</span>
+              <span class="eco-card-dot color-green"></span>
+            </div>
+            <p class="eco-card-desc">Tailored designs that match your unique vision, lifestyle, and property dynamics.</p>
+          </div>
+
+          <!-- Card 4 (Middle Left) -->
+          <div class="eco-card card-2" data-index="2">
+            <div class="eco-card-header">
+              <span class="eco-card-num">4. TIMELY EXECUTION</span>
+              <span class="eco-card-dot color-blue"></span>
+            </div>
+            <p class="eco-card-desc">On-time delivery with precise execution checklists, quality audits, and clear deadlines.</p>
+          </div>
+
+          <!-- Card 5 (Bottom Left) -->
+          <div class="eco-card card-3" data-index="3">
+            <div class="eco-card-header">
+              <span class="eco-card-num">5. END-TO-END MANAGEMENT</span>
+              <span class="eco-card-dot color-green"></span>
+            </div>
+            <p class="eco-card-desc">From concept blueprints to daily on-site supervision, we manage the entire execution loop.</p>
+          </div>
+
+        </div>
+
+        <!-- Center Hub -->
+        <div class="ecosystem-hub">
+          <div class="hub-diamond-wrapper">
+            <div class="hub-diamond">
+              <div class="hub-logo-img">
+                <img src="images%20and%20videos/bg%20%20logo.png" alt="Beyond Green Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Cards (2, 3, 6) -->
+        <div class="ecosystem-col right-col">
+          
+          <!-- Card 2 (Top Right) -->
+          <div class="eco-card card-4" data-index="4">
+            <div class="eco-card-header">
+              <span class="eco-card-dot color-green"></span>
+              <span class="eco-card-num">2. PREMIUM QUALITY PLANTS</span>
+            </div>
+            <p class="eco-card-desc">Handpicked, healthy specimens sourced from expert nurseries to guarantee lush growth.</p>
+          </div>
+
+          <!-- Card 3 (Middle Right) -->
+          <div class="eco-card card-5" data-index="5">
+            <div class="eco-card-header">
+              <span class="eco-card-dot color-blue"></span>
+              <span class="eco-card-num">3. PROFESSIONAL DESIGN TEAM</span>
+            </div>
+            <p class="eco-card-desc">Creative landscape architects and seasoned horticulturists collaborating on every plan.</p>
+          </div>
+
+          <!-- Card 6 (Bottom Right) -->
+          <div class="eco-card card-6" data-index="6">
+            <div class="eco-card-header">
+              <span class="eco-card-dot color-orange"></span>
+              <span class="eco-card-num">6. AFTER-SALES SUPPORT</span>
+            </div>
+            <p class="eco-card-desc">Dedicated AMC services and technical guidelines to maintain your garden's health long-term.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us" id="about">
+    <div class="about-container">
+      
+      <!-- Left Column: Collage Grid -->
+      <div class="about-collage-wrapper">
+        <div class="about-collage">
+          <div class="about-img-box img-top-left">
+            <img src="images%20and%20videos/about_1.jpg" alt="Cozy outdoor lounge seating">
+          </div>
+          <div class="about-img-box img-bottom-left">
+            <img src="images%20and%20videos/about_2.jpg" alt="Illuminated stone garden steps">
+          </div>
+          <div class="about-img-box img-right">
+            <img src="images%20and%20videos/about_3.jpg" alt="Lush vertical green garden wall">
+          </div>
+          
+          <!-- Overlapping Floating Card -->
+          <div class="about-floating-card">
+            <div class="badge-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"></path>
+                <path d="M12 2v18"></path>
+              </svg>
+            </div>
+            <div class="badge-text">
+              <span>Sustainable</span>
+              <span>Beautiful</span>
+              <span>Functional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column: Content -->
+      <div class="about-content">
+        <span class="about-tag">About Us</span>
+        <h2 class="about-title">Crafting Outdoor Spaces That Inspire Every Day</h2>
+        
+        <p class="about-desc">
+          At Beyond Green & Nature, we believe every outdoor space has the potential to be extraordinary. With a blend of creativity, expertise, and sustainability, we design and build landscapes that elevate lifestyles and enhance the beauty of your surroundings.
+        </p>
+        
+        <ul class="about-checklist">
+          <li>
+            <span class="check-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            Sustainable & Eco-friendly Practices
+          </li>
+          <li>
+            <span class="check-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            Innovative Designs Tailored to You
+          </li>
+          <li>
+            <span class="check-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            High-Quality Materials & Workmanship
+          </li>
+          <li>
+            <span class="check-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            Commitment to Long-Term Value
+          </li>
+        </ul>
+        
+        <div class="about-footer">
+          <a href="#contact" class="btn-primary">
+            Know More About Us
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section class="services-section" id="services">
+    <div class="section-header">
+      <span class="section-tag">Our Services</span>
+      <h2 class="section-title">Comprehensive Landscape Services<br>for Every Outdoor Need</h2>
+      <div class="leaf-divider">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"/>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="services-marquee">
+      <div class="services-marquee-track">
+        
+        <!-- Card 1 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_1.jpg" alt="Landscape Design & Planning">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <circle cx="12" cy="11" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Landscape Design & Planning</h3>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_2.jpg" alt="Landscape Execution & Development">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 10a6 6 0 0 0-6-6H3v3a6 6 0 0 0 6 6h3"></path>
+                <path d="M12 14a6 6 0 0 1 6-6h3v3a6 6 0 0 1-6 6h-3"></path>
+                <path d="M12 2v20"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Landscape Execution & Development</h3>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_3.jpg" alt="Luxury Villa Landscaping">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Luxury Villa Landscaping</h3>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_4.jpg" alt="Rooftop Garden Design">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Rooftop Garden Design</h3>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_2.jpg" alt="Live Vertical Green Walls">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"></path>
+                <path d="M12 8l-4 4h8l-4-4zM12 16l-4-4h8l-4 4z"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Live Vertical Green Walls</h3>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_1.jpg" alt="Water Features & Fountains">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"></path>
+                <path d="M12 18v-4"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Water Features & Fountains</h3>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_4.jpg" alt="Pathways & Pergola Hardscape">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <line x1="15" y1="3" x2="15" y2="21"></line>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="3" y1="15" x2="21" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Pathways & Pergola Hardscape</h3>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_3.jpg" alt="Annual Maintenance Contracts (AMC)">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 11l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Annual Maintenance Contracts (AMC)</h3>
+          </div>
+        </div>
+
+        <!-- Duplicated Cards for Infinite Train Effect -->
+        
+        <!-- Card 1 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_1.jpg" alt="Landscape Design & Planning">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <circle cx="12" cy="11" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Landscape Design & Planning</h3>
+          </div>
+        </div>
+
+        <!-- Card 2 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_2.jpg" alt="Landscape Execution & Development">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 10a6 6 0 0 0-6-6H3v3a6 6 0 0 0 6 6h3"></path>
+                <path d="M12 14a6 6 0 0 1 6-6h3v3a6 6 0 0 1-6 6h-3"></path>
+                <path d="M12 2v20"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Landscape Execution & Development</h3>
+          </div>
+        </div>
+
+        <!-- Card 3 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_3.jpg" alt="Luxury Villa Landscaping">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Luxury Villa Landscaping</h3>
+          </div>
+        </div>
+
+        <!-- Card 4 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/service_4.jpg" alt="Rooftop Garden Design">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Rooftop Garden Design</h3>
+          </div>
+        </div>
+
+        <!-- Card 5 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_2.jpg" alt="Live Vertical Green Walls">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"></path>
+                <path d="M12 8l-4 4h8l-4-4zM12 16l-4-4h8l-4 4z"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Live Vertical Green Walls</h3>
+          </div>
+        </div>
+
+        <!-- Card 6 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_1.jpg" alt="Water Features & Fountains">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"></path>
+                <path d="M12 18v-4"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Water Features & Fountains</h3>
+          </div>
+        </div>
+
+        <!-- Card 7 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_4.jpg" alt="Pathways & Pergola Hardscape">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <line x1="15" y1="3" x2="15" y2="21"></line>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="3" y1="15" x2="21" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Pathways & Pergola Hardscape</h3>
+          </div>
+        </div>
+
+        <!-- Card 8 Duplicate -->
+        <div class="service-card-item">
+          <div class="service-img-container">
+            <img src="images%20and%20videos/project_3.jpg" alt="Annual Maintenance Contracts (AMC)">
+          </div>
+          <div class="service-card-bottom">
+            <div class="service-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 11l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Annual Maintenance Contracts (AMC)</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="projects-section" id="projects">
+    <!-- Decorative Leaf Silhouettes (Ambient Background Motion) -->
+    <div class="projects-ambient-leaf leaf-top-left">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M10 80 C30 50, 60 50, 90 20 C70 50, 40 50, 10 80" fill="currentColor" />
+        <path d="M20 70 Q45 55 70 35" stroke="currentColor" stroke-width="1.2" />
+      </svg>
+    </div>
+    <div class="projects-ambient-leaf leaf-bottom-right">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M10 80 C30 50, 60 50, 90 20 C70 50, 40 50, 10 80" fill="currentColor" transform="rotate(90 50 50)" />
+        <path d="M20 70 Q45 55 70 35" stroke="currentColor" stroke-width="1.2" transform="rotate(90 50 50)" />
+      </svg>
+    </div>
+
+    <div class="section-header dark-bg-header">
+      <span class="section-tag">Featured Projects</span>
+      <h2 class="section-title">Spaces We're Proud To Have Created</h2>
+      <div class="leaf-divider">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"/>
+        </svg>
+      </div>
+    </div>
+    
+    <!-- Carousel Grid Wrapper -->
+    <div class="projects-carousel-wrapper">
+      
+      <!-- Nav Button: Left -->
+      <button class="carousel-nav-btn prev-btn" id="projectPrevBtn" aria-label="Previous Project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      
+      <!-- Slider Track -->
+      <div class="projects-slider-container">
+        <div class="projects-slider-track" id="projectSliderTrack">
+          
+          <!-- Card 1 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/project_1.jpg" alt="Modern Villa Landscape">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Modern Villa Landscape</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Bangalore
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/project_2.jpg" alt="Rooftop Garden Retreat">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Rooftop Garden Retreat</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Hyderabad
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/project_3.jpg" alt="Luxury Farmhouse Landscape">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Luxury Farmhouse Landscape</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Delhi
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/project_4.jpg" alt="Corporate Campus Landscape">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Corporate Campus Landscape</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Mumbai
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/about_1.jpg" alt="Serene Garden Courtyard">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Serene Garden Courtyard</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Pune
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/about_2.jpg" alt="Elegant Pathway Design">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Elegant Pathway Design</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Chennai
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/about_3.jpg" alt="Vertical Garden Installation">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Vertical Garden Installation</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Kolkata
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="project-slide-card reveal-item">
+            <div class="project-img-box">
+              <img src="images%20and%20videos/service_1.jpg" alt="Luxury Resort Landscape">
+            </div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Luxury Resort Landscape</h3>
+              <div class="project-location">
+                <span class="location-pin-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                Goa
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Nav Button: Right -->
+      <button class="carousel-nav-btn next-btn" id="projectNextBtn" aria-label="Next Project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Carousel Dots Indicators -->
+    <div class="carousel-dots-container" id="projectDotsContainer">
+      <span class="carousel-dot active" data-index="0"></span>
+      <span class="carousel-dot" data-index="1"></span>
+      <span class="carousel-dot" data-index="2"></span>
+      <span class="carousel-dot" data-index="3"></span>
+      <span class="carousel-dot" data-index="4"></span>
+      <span class="carousel-dot" data-index="5"></span>
+      <span class="carousel-dot" data-index="6"></span>
+      <span class="carousel-dot" data-index="7"></span>
+    </div>
+  </section>
+
+  <!-- Our Process Section -->
+  <section class="process-section" id="process">
+    <!-- Decorative Leaf Silhouettes (Ambient Background Motion) -->
+    <div class="process-ambient-leaf leaf-top-right">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M10 80 C30 50, 60 50, 90 20 C70 50, 40 50, 10 80" fill="currentColor" transform="scale(-1, 1) translate(-100, 0)" />
+        <path d="M20 70 Q45 55 70 35" stroke="currentColor" stroke-width="1.2" transform="scale(-1, 1) translate(-100, 0)" />
+      </svg>
+    </div>
+    <div class="process-ambient-leaf leaf-bottom-left">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M10 80 C30 50, 60 50, 90 20 C70 50, 40 50, 10 80" fill="currentColor" transform="rotate(-90 50 50)" />
+        <path d="M20 70 Q45 55 70 35" stroke="currentColor" stroke-width="1.2" transform="rotate(-90 50 50)" />
+      </svg>
+    </div>
+
+    <div class="section-header">
+      <span class="section-tag">Our Process</span>
+      <h2 class="section-title">Our 4-Step Approach to Perfection</h2>
+      <div class="leaf-divider">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a15 15 0 0 0-10 10c0 4.2 3.8 8 10 8c6.2 0 10-3.8 10-8A15 15 0 0 0 12 2z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="process-steps-container">
+      <!-- SVG Dynamic Responsive Flow Line Layer (Visible on Desktop) -->
+      <svg class="process-steps-svg-layer">
+        <path id="processPathBase" class="process-flow-path-base" d="" />
+        <path id="processPathFlow" class="process-flow-path-active" d="" />
+      </svg>
+      
+      <!-- Step 1 -->
+      <div class="process-step-item reveal-item">
+        <div class="step-card">
+          <div class="step-card-header">
+            <span class="step-number">01</span>
+            <span class="step-icon">
+              <!-- Design Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="step-title">Design</h3>
+          <p class="step-desc">We understand your vision, analyze the space, and create a customized design that reflects beauty and functionality.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-step-item reveal-item">
+        <div class="step-card">
+          <div class="step-card-header">
+            <span class="step-number">02</span>
+            <span class="step-icon">
+              <!-- Execute Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 10a6 6 0 0 0-6-6H3v3a6 6 0 0 0 6 6h3"></path>
+                <path d="M12 14a6 6 0 0 1 6-6h3v3a6 6 0 0 1-6 6h-3"></path>
+                <path d="M12 2v20"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="step-title">Execute</h3>
+          <p class="step-desc">Our skilled team brings the design to life with precision, quality materials, and timely project execution.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-step-item reveal-item">
+        <div class="step-card">
+          <div class="step-card-header">
+            <span class="step-number">03</span>
+            <span class="step-icon">
+              <!-- Maintain Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 11l2 2 4-4"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="step-title">Maintain</h3>
+          <p class="step-desc">We ensure your landscape stays green, healthy, and beautiful with regular care and maintenance.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="process-step-item reveal-item">
+        <div class="step-card">
+          <div class="step-card-header">
+            <span class="step-number">04</span>
+            <span class="step-icon">
+              <!-- Support Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </span>
+          </div>
+          <h3 class="step-title">Support</h3>
+          <p class="step-desc">Our after-sales support ensures long-term satisfaction and continuous value for your space.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials & Partners Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-container">
+      
+      <!-- Left Column: Partners Logo Grid -->
+      <div class="partners-grid-box">
+        <h2 class="partners-title">Trusted by Homes,<br>Businesses & Institutions</h2>
+        <p class="partners-subtitle">Our clients trust us for our creativity, reliability, and commitment to excellence.</p>
+        
+        <div class="partners-logos-marquee">
+          <div class="partners-marquee-track">
+            <!-- 6 original client logo boxes -->
+            <div class="logo-box">
+              <img src="images%20and%20videos/cleint%201.png" alt="Client Logo 1">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/clietn%202.png" alt="Client Logo 2">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/cliet%203.png" alt="Client Logo 3">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/cleint%201.png" alt="Client Logo 4">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/clietn%202.png" alt="Client Logo 5">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/cliet%203.png" alt="Client Logo 6">
+            </div>
+            
+            <!-- Duplicated 6 client logo boxes for infinite loops -->
+            <div class="logo-box">
+              <img src="images%20and%20videos/cleint%201.png" alt="Client Logo 1">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/clietn%202.png" alt="Client Logo 2">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/cliet%203.png" alt="Client Logo 3">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/cleint%201.png" alt="Client Logo 4">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/clietn%202.png" alt="Client Logo 5">
+            </div>
+            <div class="logo-box">
+              <img src="images%20and%20videos/cliet%203.png" alt="Client Logo 6">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Testimonial Card -->
+      <div class="testimonial-card-box">
+        <div class="testimonial-content">
+          <!-- Rating Stars -->
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote" id="testQuote">
+            "Beyond Green & Nature transformed our rooftop into a peaceful green haven. Their team was professional, creative, and delivered beyond our expectations."
+          </p>
+        </div>
+        
+        <div class="testimonial-footer">
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="author-info">
+              <h4 class="author-name" id="testAuthor">Arjun Mehta</h4>
+              <span class="author-role" id="testRole">Homeowner, Bangalore</span>
+            </div>
+          </div>
+          
+          <div class="testimonial-nav">
+            <button class="test-nav-btn" id="testPrevBtn" aria-label="Previous Testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="test-nav-btn" id="testNextBtn" aria-label="Next Testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="cta-banner-container">
+      <h2 class="cta-banner-text">Let's transform your outdoor space into a green masterpiece.</h2>
+      <a href="#contact" class="btn-primary cta-banner-btn">
+        Book a Consultation
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Get In Touch (Contact Form) Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-form-container">
+      
+      <!-- Left Column: Image & Floating Card -->
+      <div class="contact-image-wrapper">
+        <div class="contact-image-box">
+          <img src="images%20and%20videos/new.png" alt="Beautiful landscape home pathway">
+          
+        </div>
+      </div>
+      
+      <!-- Right Column: Form -->
+      <div class="contact-form-box">
+        <h2 class="contact-form-title">Get In Touch</h2>
+        <p class="contact-form-subtitle">Fill in your details and our team will get back to you shortly.</p>
+        
+        <form class="contact-form-fields" onsubmit="event.preventDefault(); alert('Inquiry sent successfully!');">
+          <div class="form-grid">
+            <div class="form-group">
+              <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone Number">
+            </div>
+            <div class="form-group select-wrapper">
+              <select required>
+                <option value="" disabled selected hidden>Service Interested In</option>
+                <option value="landscape-design">Landscape Design</option>
+                <option value="landscape-execution">Landscape Execution</option>
+                <option value="rooftop-gardens">Rooftop Gardens</option>
+                <option value="vertical-walls">Vertical Green Walls</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="City / Location">
+            </div>
+            <div class="form-group select-wrapper">
+              <select required>
+                <option value="" disabled selected hidden>Project Type</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="institutional">Institutional</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group textarea-group">
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary submit-btn">
+            Send Inquiry
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Column 1: Brand & Socials -->
+      <div class="footer-col col-brand">
+        <a href="#" class="footer-logo">
+          <img src="images%20and%20videos/bg%20%20logo.png" alt="Beyond Green & Nature Logo">
+        </a>
+        <p class="brand-desc">
+          We design, build, and maintain beautiful, sustainable, and functional landscapes that enhance lives and spaces.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22a9 9 0 0 1-5.36-1.66C3 19.3 5 13.5 5 13.5s-.5-1 .5-2.5c.9-1.5 2.5-1.5 2.5-.5 0 1-.5 2.5-.8 3.8-.2.9.4 1.7 1.3 1.7 1.6 0 2.8-1.7 2.8-4.2 0-2.2-1.6-3.8-3.9-3.8-2.6 0-4.2 2-4.2 4.1 0 .8.3 1.7.7 2.2a.5.5 0 0 1 .1.4c-.1.3-.2.9-.3 1a.3.3 0 0 1-.4.2c-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.5 6.5-1.1 0-2.1-.6-2.4-1.2l-.7 2.6c-.3 1-1 2.2-1.5 3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"></polygon></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#amc">AMC</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Our Services -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Our Services</h3>
+        <ul class="footer-links">
+          <li><a href="#services">Landscape Design</a></li>
+          <li><a href="#services">Landscape Execution</a></li>
+          <li><a href="#services">Rooftop Gardens</a></li>
+          <li><a href="#services">Vertical Green Walls</a></li>
+          <li><a href="#services">Irrigation Systems</a></li>
+          <li><a href="#services">AMC & Maintenance</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Contact Us</h3>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div class="contact-numbers">
+              <span>+91 98765 43210</span>
+              <span>+91 80 1234 5678</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </span>
+            <span>hello@beyondgreen.in</span>
+          </li>
+          <li>
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <span>123 Green Avenue, Nature City, Bangalore - 560001</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 5: Newsletter -->
+      <div class="footer-col col-newsletter">
+        <h3 class="footer-col-title">Newsletter</h3>
+        <p class="newsletter-text">Subscribe to our newsletter for tips, updates & offers.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" aria-label="Subscribe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+    
+    <!-- Footer Bottom Copyright Strip -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <span>&copy; 2026 Beyond Green & Nature. All Rights Reserved.</span>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript logic -->
+  <script>
+    // Scroll header background transition
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile nav toggle drawer
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    function toggleMenu() {
+      menuToggle.classList.remove('active');
+      mobileNav.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    }
+
+    // Mobile services dropdown
+    function toggleMobileDropdown(event) {
+      event.preventDefault();
+      const mobileDropdown = document.getElementById('mobileDropdown');
+      mobileDropdown.classList.toggle('active');
+    }
+
+    // Projects Slider carousel logic
+    const track = document.getElementById('projectSliderTrack');
+    const prevBtn = document.getElementById('projectPrevBtn');
+    const nextBtn = document.getElementById('projectNextBtn');
+    const dotsContainer = document.getElementById('projectDotsContainer');
+    const dots = Array.from(dotsContainer.children);
+    
+    let currentIndex = 0;
+    
+    function updateSlider(index) {
+      const cardWidth = document.querySelector('.project-slide-card').offsetWidth;
+      const gap = 20; // 1.25rem gap in pixels
+      const offset = index * (cardWidth + gap);
+      
+      track.style.transform = `translateX(-${offset}px)`;
+      
+      // Update dots
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      
+      currentIndex = index;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      let maxSlides = dots.length;
+      // Adjust visible slide counts for responsive layouts
+      if (window.innerWidth >= 1200) {
+        maxSlides = dots.length - 3;
+      } else if (window.innerWidth >= 992) {
+        maxSlides = dots.length - 2;
+      } else if (window.innerWidth >= 768) {
+        maxSlides = dots.length - 1;
+      } else {
+        maxSlides = dots.length;
+      }
+      
+      if (maxSlides < 1) maxSlides = 1;
+      let nextIndex = currentIndex + 1;
+      if (nextIndex >= maxSlides) nextIndex = 0;
+      updateSlider(nextIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      let maxSlides = dots.length;
+      if (window.innerWidth >= 1200) {
+        maxSlides = dots.length - 3;
+      } else if (window.innerWidth >= 992) {
+        maxSlides = dots.length - 2;
+      } else if (window.innerWidth >= 768) {
+        maxSlides = dots.length - 1;
+      } else {
+        maxSlides = dots.length;
+      }
+      
+      if (maxSlides < 1) maxSlides = 1;
+      let prevIndex = currentIndex - 1;
+      if (prevIndex < 0) prevIndex = maxSlides - 1;
+      updateSlider(prevIndex);
+    });
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        updateSlider(idx);
+      });
+    });
+
+    // Testimonials slider logic (Cycling content)
+    const testimonials = [
+      {
+        quote: '"Beyond Green & Nature transformed our rooftop into a peaceful green haven. Their team was professional, creative, and delivered beyond our expectations."',
+        author: 'Arjun Mehta',
+        role: 'Homeowner, Bangalore'
+      },
+      {
+        quote: '"Outstanding execution for our corporate park. The landscaping is pristine, water features run smoothly, and response time has been superb."',
+        author: 'Sarah D\'souza',
+        role: 'VP Facility Management, RMZ'
+      },
+      {
+        quote: '"Exceptional garden designs for our luxury farmhouse. The mood lighting and pathway setups look breath-taking in the evenings."',
+        author: 'Vikram Malhotra',
+        role: 'Farmhouse Owner, Delhi'
+      }
+    ];
+
+    let testIndex = 0;
+    const quoteEl = document.getElementById('testQuote');
+    const authorEl = document.getElementById('testAuthor');
+    const roleEl = document.getElementById('testRole');
+    const testPrevBtn = document.getElementById('testPrevBtn');
+    const testNextBtn = document.getElementById('testNextBtn');
+
+    function updateTestimonial(index) {
+      const cardBox = document.querySelector('.testimonial-card-box');
+      cardBox.classList.add('animating');
+      
+      setTimeout(() => {
+        quoteEl.textContent = testimonials[index].quote;
+        authorEl.textContent = testimonials[index].author;
+        roleEl.textContent = testimonials[index].role;
+        
+        cardBox.classList.remove('animating');
+      }, 300);
+      
+      testIndex = index;
+    }
+
+    testNextBtn.addEventListener('click', () => {
+      let nextIdx = testIndex + 1;
+      if (nextIdx >= testimonials.length) nextIdx = 0;
+      updateTestimonial(nextIdx);
+    });
+
+    testPrevBtn.addEventListener('click', () => {
+      let prevIdx = testIndex - 1;
+      if (prevIdx < 0) prevIdx = testimonials.length - 1;
+      updateTestimonial(prevIdx);
+    });
+
+    // Handle resize adjustments
+    window.addEventListener('resize', () => {
+      updateSlider(0);
+    });
+
+    // Count-up stats banner numbers on scroll intersection
+    const statNums = document.querySelectorAll('.banner-stat-num');
+    const statsSection = document.querySelector('.stats-banner-container');
+    let countUpTriggered = false;
+
+    function startCountUp() {
+      statNums.forEach(num => {
+        const target = parseInt(num.getAttribute('data-count'), 10);
+        let current = 0;
+        const duration = 1600; // milliseconds
+        const stepTime = Math.max(Math.floor(duration / target), 12);
+        const increment = Math.ceil(target / (duration / stepTime));
+        
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            num.textContent = target + '+';
+            clearInterval(timer);
+          } else {
+            num.textContent = current + '+';
+          }
+        }, stepTime);
+      });
+    }
+
+    if (statsSection && statNums.length > 0) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !countUpTriggered) {
+            countUpTriggered = true;
+            startCountUp();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      observer.observe(statsSection);
+    }
+
+    // Ecosystem card hover SVG path highlight logic
+    const ecoCards = document.querySelectorAll('.eco-card');
+    ecoCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        const idx = card.getAttribute('data-index');
+        const path = document.querySelector(`.eco-path.path-${idx}`);
+        const node = document.querySelector(`.eco-node.node-${idx}`);
+        if (path) path.classList.add('active');
+        if (node) node.classList.add('active');
+      });
+      card.addEventListener('mouseleave', () => {
+        const idx = card.getAttribute('data-index');
+        const path = document.querySelector(`.eco-path.path-${idx}`);
+        const node = document.querySelector(`.eco-node.node-${idx}`);
+        if (path) path.classList.remove('active');
+        if (node) node.classList.remove('active');
+      });
+    });
+    // Custom cursor trail physics logic
+    const cursor = document.querySelector('.custom-cursor');
+    const follower = document.querySelector('.custom-cursor-follower');
+    
+    if (cursor && follower) {
+      let mouseX = -100;
+      let mouseY = -100;
+      let posX = -100;
+      let posY = -100;
+
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        cursor.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+      });
+
+      // Trail loop with smooth interpolation
+      function animateTrail() {
+        posX += (mouseX - posX) * 0.15;
+        posY += (mouseY - posY) * 0.15;
+        
+        follower.style.transform = `translate(${posX}px, ${posY}px) translate(-50%, -50%)`;
+        
+        requestAnimationFrame(animateTrail);
+      }
+      animateTrail();
+
+      // Expand custom cursor on hoverable elements
+      const hoverables = document.querySelectorAll('a, button, .eco-card, .logo-box, .banner-stat-item, .nav-link, .dropdown-item');
+      hoverables.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          follower.classList.add('hovered');
+          cursor.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+          follower.classList.remove('hovered');
+          cursor.classList.remove('hovered');
+        });
+      });
+    }
+
+    // Falling leaves particle system on scroll
+    const leavesContainer = document.querySelector('.leaves-container');
+    const leafPaths = [
+      "M17 3c-2.3 0-4.7.9-6.5 2.7L8.8 7.4c-.6.6-.9 1.4-.9 2.2V11H6.2c-.8 0-1.6.3-2.2.9L2.3 13.6C.5 15.4-.3 17.8.1 20.1c.4 2.3 2.1 4 4.4 4.4 2.3.4 4.7-.4 6.5-2.2l1.7-1.7c.6-.6.9-1.4.9-2.2v-1.7h1.7c.8 0 1.6-.3 2.2-.9l1.7-1.7c3.6-3.6 3.6-9.4 0-13C19.7 3.9 18.3 3 17 3z",
+      "M12 2C6.5 2 2 6.5 2 12c0 4.4 3.6 8 8 8c5.5 0 10-4.5 10-10C20 5.5 15.5 2 12 2zm0 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"
+    ];
+
+    let lastScrollTime = 0;
+    const scrollThrottle = 80; // Throttled leaf spawn on scroll (max 1 leaf per 80ms)
+
+    function spawnLeaf() {
+      if (!leavesContainer) return;
+      
+      // Keep DOM light: limit max particles on screen
+      if (document.querySelectorAll('.leaf-particle').length > 15) return;
+
+      const leaf = document.createElement('div');
+      leaf.className = 'leaf-particle';
+      
+      const randomPath = leafPaths[Math.floor(Math.random() * leafPaths.length)];
+      const size = Math.floor(Math.random() * 18) + 12; // size between 12px and 30px
+      const leftPos = Math.random() * window.innerWidth;
+      const duration = Math.random() * 3 + 4; // fall duration between 4s and 7s
+      const rotationStart = Math.random() * 360;
+      
+      leaf.style.left = `${leftPos}px`;
+      leaf.style.width = `${size}px`;
+      leaf.style.height = `${size}px`;
+      leaf.style.animationDuration = `${duration}s`;
+      
+      leaf.innerHTML = `
+        <svg viewBox="0 0 24 24" style="transform: rotate(${rotationStart}deg); width: 100%; height: 100%;">
+          <path d="${randomPath}" fill="rgba(112, 224, 0, ${Math.random() * 0.35 + 0.3})" />
+        </svg>
+      `;
+
+      leavesContainer.appendChild(leaf);
+      
+      // Remove leaf after animation completes
+      setTimeout(() => {
+        leaf.remove();
+      }, duration * 1000);
+    }
+
+    // Scroll listener to spawn leaves
+    window.addEventListener('scroll', () => {
+      const now = Date.now();
+      if (now - lastScrollTime > scrollThrottle) {
+        spawnLeaf();
+        lastScrollTime = now;
+      }
+    });
+
+    // ==========================================
+    // Premium Splash Preloader Controller
+    // ==========================================
+    (function() {
+      const preloader = document.getElementById('preloader');
+      const progressBar = document.querySelector('.preloader-bar');
+      const statusText = document.querySelector('.preloader-status');
+      
+      if (!preloader || !progressBar) return;
+      
+      // Start loading bar progression
+      let progressVal = 0;
+      const progressTimer = setInterval(() => {
+        if (progressVal >= 85) {
+          clearInterval(progressTimer);
+        } else {
+          progressVal += Math.floor(Math.random() * 8) + 2;
+          if (progressVal > 85) progressVal = 85;
+          progressBar.style.width = progressVal + '%';
+        }
+      }, 90);
+      
+      window.addEventListener('load', () => {
+        clearInterval(progressTimer);
+        progressBar.style.width = '100%';
+        if (statusText) {
+          statusText.textContent = 'Designing Nature Beautifully...';
+        }
+        
+        setTimeout(() => {
+          preloader.classList.add('fade-away');
+          setTimeout(() => {
+            preloader.remove();
+          }, 850);
+        }, 1000);
+      });
+    })();
+
+    // ==========================================
+    // Dynamic Process Connector Line Redraw Engine
+    // ==========================================
+    const pathBase = document.getElementById('processPathBase');
+    const pathFlow = document.getElementById('processPathFlow');
+    
+    function resizeProcessLine() {
+      if (window.innerWidth < 992) {
+        if (pathBase) pathBase.setAttribute('d', '');
+        if (pathFlow) pathFlow.setAttribute('d', '');
+        return;
+      }
+      
+      const container = document.querySelector('.process-steps-container');
+      const badges = document.querySelectorAll('.step-number');
+      
+      if (!container || badges.length < 4 || !pathBase || !pathFlow) return;
+      
+      const containerRect = container.getBoundingClientRect();
+      const coords = Array.from(badges).map(badge => {
+        const r = badge.getBoundingClientRect();
+        return {
+          x: r.left + r.width/2 - containerRect.left,
+          y: r.top + r.height/2 - containerRect.top,
+          width: r.width
+        };
+      });
+      
+      const gap = 16; // 16px clear gap around the badges
+      let d = '';
+      
+      for (let i = 0; i < coords.length - 1; i++) {
+        const startX = coords[i].x + coords[i].width/2 + gap;
+        const endX = coords[i+1].x - coords[i+1].width/2 - gap;
+        const y = coords[i].y;
+        d += `M ${startX},${y} L ${endX},${y} `;
+      }
+      
+      pathBase.setAttribute('d', d);
+      pathFlow.setAttribute('d', d);
+    }
+    
+    window.addEventListener('resize', resizeProcessLine);
+    
+    // ==========================================
+    // Intersection Observer Staggered Scroll Reveals
+    // ==========================================
+    const revealItems = document.querySelectorAll('.reveal-item');
+    if (revealItems.length > 0) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Find sibling items in the same container to apply staggered delay
+            const parent = entry.target.parentElement;
+            const siblings = Array.from(parent.querySelectorAll('.reveal-item'));
+            const index = siblings.indexOf(entry.target);
+            
+            if (index !== -1) {
+              entry.target.style.transitionDelay = (index * 0.15) + 's';
+            }
+            
+            entry.target.classList.add('reveal-visible');
+            revealObserver.unobserve(entry.target);
+            
+            // Trigger process line redraw when process section reveals
+            if (entry.target.classList.contains('process-step-item')) {
+              setTimeout(resizeProcessLine, 250);
+            }
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      
+      revealItems.forEach(item => {
+        revealObserver.observe(item);
+      });
+    }
+
+    // Call process line coordinate sizing trigger
+    setTimeout(resizeProcessLine, 400);
+    window.addEventListener('load', resizeProcessLine);
+
+    // Safety Fallback: Ensure cards reveal even if scroll triggers fail
+    setTimeout(() => {
+      document.querySelectorAll('.reveal-item:not(.reveal-visible)').forEach(item => {
+        item.classList.add('reveal-visible');
+      });
+      // Force redrawing connector lines
+      resizeProcessLine();
+    }, 2000);
+  </script>
+
+  <!-- Custom Cursor & Leaves Elements -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+  <div class="leaves-container"></div>
+
+</body>
+</html>
