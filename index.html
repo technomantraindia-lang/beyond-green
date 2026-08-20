@@ -189,29 +189,32 @@
     
     <div class="ecosystem-wrapper">
       <!-- SVG Connectors Layer (Visible on Desktop) -->
-      <svg class="ecosystem-svg-layer" viewBox="0 0 1100 500" preserveAspectRatio="none">
+      <svg class="ecosystem-svg-layer" viewBox="0 0 1400 500" preserveAspectRatio="none">
+        <!-- Structural concentric Hexagon Outline -->
+        <polygon class="hex-outline" points="625,140 775,140 850,250 775,360 625,360 550,250" style="stroke: rgba(19, 58, 39, 0.12); stroke-width: 1.5; fill: none;" />
+        
         <!-- Connecting paths -->
         <!-- Path 1 (Top Left) -->
-        <path class="eco-path path-1" d="M 415,70 L 430,70 L 445,190" />
+        <path class="eco-path path-1" d="M 415,70 L 520,70 L 625,140" />
         <!-- Path 2 (Middle Left) -->
-        <path class="eco-path path-2" d="M 335,250 L 445,250" />
+        <path class="eco-path path-2" d="M 335,250 L 550,250" />
         <!-- Path 3 (Bottom Left) -->
-        <path class="eco-path path-3" d="M 415,430 L 430,430 L 445,310" />
+        <path class="eco-path path-3" d="M 415,430 L 520,430 L 625,360" />
         
         <!-- Path 4 (Top Right) -->
-        <path class="eco-path path-4" d="M 685,70 L 670,70 L 655,190" />
+        <path class="eco-path path-4" d="M 985,70 L 880,70 L 775,140" />
         <!-- Path 5 (Middle Right) -->
-        <path class="eco-path path-5" d="M 765,250 L 655,250" />
+        <path class="eco-path path-5" d="M 1065,250 L 850,250" />
         <!-- Path 6 (Bottom Right) -->
-        <path class="eco-path path-6" d="M 685,430 L 670,430 L 655,310" />
+        <path class="eco-path path-6" d="M 985,430 L 880,430 L 775,360" />
 
-        <!-- Node points offset outside the Hexagon boundaries -->
-        <circle class="eco-node node-1 color-green" cx="445" cy="190" r="6" />
-        <circle class="eco-node node-2 color-blue" cx="445" cy="250" r="6" />
-        <circle class="eco-node node-3 color-green" cx="445" cy="310" r="6" />
-        <circle class="eco-node node-4 color-green" cx="655" cy="190" r="6" />
-        <circle class="eco-node node-5 color-blue" cx="655" cy="250" r="6" />
-        <circle class="eco-node node-6 color-orange" cx="655" cy="310" r="6" />
+        <!-- Node points exactly on the Hexagon vertices -->
+        <circle class="eco-node node-1 color-green" cx="625" cy="140" r="6" />
+        <circle class="eco-node node-2 color-blue" cx="550" cy="250" r="6" />
+        <circle class="eco-node node-3 color-green" cx="625" cy="360" r="6" />
+        <circle class="eco-node node-4 color-green" cx="775" cy="140" r="6" />
+        <circle class="eco-node node-5 color-blue" cx="850" cy="250" r="6" />
+        <circle class="eco-node node-6 color-orange" cx="775" cy="360" r="6" />
       </svg>
 
       <div class="ecosystem-container">
