@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 
     <style>
         /* =====================================================
@@ -86,6 +87,7 @@
                     rgba(1, 20, 12, .34) 58%,
                     rgba(1, 18, 11, .30) 100%),
                 url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2200&q=90") center/cover no-repeat;
+            padding-top: 110px;
         }
 
         .hero::after {
@@ -96,90 +98,6 @@
                 linear-gradient(180deg, rgba(0, 0, 0, .10), transparent 45%),
                 radial-gradient(circle at 90% 5%, rgba(80, 180, 20, .12), transparent 26%);
             pointer-events: none;
-        }
-
-        .navbar {
-            position: relative;
-            z-index: 5;
-            height: 90px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            min-width: 190px;
-        }
-
-        .logo-mark {
-            width: 50px;
-            height: 50px;
-            border: 1px solid rgba(111, 220, 32, .45);
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            color: #69d314;
-            font-size: 24px;
-        }
-
-        .logo-text strong {
-            display: block;
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            line-height: 1;
-        }
-
-        .logo-text small {
-            display: block;
-            color: #74d938;
-            font-size: 8px;
-            letter-spacing: 2px;
-            margin-top: 5px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 37px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            font-weight: 500;
-            opacity: .92;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -11px;
-            width: 0;
-            height: 2px;
-            background: #55cb13;
-            transition: .3s;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        .nav-cta {
-            padding: 14px 23px;
-            border-radius: 30px;
-            background: linear-gradient(90deg, #48b80b, #67d613);
-            font-size: 13px;
-            font-weight: 700;
-            box-shadow: 0 8px 24px rgba(75, 200, 20, .25);
-            display: flex;
-            gap: 10px;
-            align-items: center;
         }
 
         .hero-content {
@@ -199,7 +117,7 @@
         }
 
         .breadcrumb span:last-child {
-            color: #76dd30;
+            color: #ffffff; /* Make breadcrumbs text white */
         }
 
         .hero-title {
@@ -211,7 +129,11 @@
         }
 
         .hero-title .green {
-            color: #59c714;
+            color: #ffffff; /* Make banner title text white */
+        }
+
+        .parrot-green {
+            color: #6bd20f !important; /* Parrot light green */
         }
 
         .hero-line {
@@ -293,12 +215,35 @@
 
         .projects-section {
             padding: 75px 0 55px;
+            background: #ffffff !important; /* White background */
         }
 
         .projects-layout {
             display: grid;
-            grid-template-columns: 230px 1fr;
+            grid-template-columns: 340px 1fr; /* Increased width of this box */
             gap: 45px;
+        }
+
+        .projects-intro {
+            background: #073522; /* Dark green card background */
+            color: #ffffff;
+            padding: 30px 24px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(7, 53, 34, 0.08);
+        }
+
+        .projects-intro .eyebrow {
+            color: #ffffff !important; /* Make this text white color */
+            margin-bottom: 12px;
+        }
+
+        .projects-intro .section-title {
+            color: #ffffff !important;
+            font-size: 32px;
+        }
+
+        .projects-intro .intro-copy {
+            color: rgba(255, 255, 255, 0.85) !important;
         }
 
         .eyebrow {
@@ -335,21 +280,45 @@
             display: inline-flex;
             align-items: center;
             gap: 17px;
-            color: #fff;
-            background: #073522;
+            color: #073522;
+            background: #ffffff;
+            border: 1px solid #e4e9e2;
             border-radius: 9px;
             padding: 15px 20px;
             font-size: 13px;
             font-weight: 700;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .start-btn:hover {
+            background: #073522;
+            color: #ffffff;
+            border-color: #073522;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(7, 53, 34, 0.15);
         }
 
         .view-link {
-            margin-top: 22px;
-            display: flex;
-            gap: 10px;
+            margin-top: 15px;
+            display: inline-flex;
             align-items: center;
-            color: #54ad22;
+            gap: 10px;
+            color: #073522;
+            background: #ffffff;
+            border: 1px solid #e4e9e2;
+            border-radius: 9px;
+            padding: 15px 20px;
             font-size: 13px;
+            font-weight: 700;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .view-link:hover {
+            background: #073522;
+            color: #ffffff;
+            border-color: #073522;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(7, 53, 34, 0.15);
         }
 
         /* project grid */
@@ -398,6 +367,7 @@
         .project-info h3 {
             font-size: 15px;
             margin-bottom: 4px;
+            color: #ffffff !important; /* Force project names to be white color */
         }
 
         .location {
@@ -490,6 +460,15 @@
             justify-content: center;
             gap: 20px;
             position: relative;
+            padding: 15px 20px;
+            border-radius: 14px;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+        }
+
+        .stat:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-6px);
         }
 
         .stat:not(:last-child)::after {
@@ -498,7 +477,12 @@
             right: 0;
             width: 1px;
             height: 55px;
-            background: rgba(255, 255, 255, .3);
+            background: rgba(255, 255, 255, .2);
+            transition: opacity 0.3s;
+        }
+
+        .stat:hover::after {
+            opacity: 0;
         }
 
         .stat-icon {
@@ -507,9 +491,17 @@
             border-radius: 50%;
             display: grid;
             place-items: center;
-            background: rgba(90, 202, 20, .08);
+            background: rgba(112, 224, 0, .08);
             color: #6bd20f;
             font-size: 25px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .stat:hover .stat-icon {
+            background: #6bd20f;
+            color: #062719;
+            transform: scale(1.15) rotate(8deg);
+            box-shadow: 0 5px 18px rgba(107, 210, 15, 0.4);
         }
 
         .stat-value {
@@ -523,6 +515,7 @@
             margin-top: 6px;
             font-size: 11px;
             color: #e0e8e2;
+            font-weight: 600;
         }
 
         /* =====================================================
@@ -551,11 +544,21 @@
         .process-cards::before {
             content: "";
             position: absolute;
-            top: 47px;
+            top: 70px;
             left: 10%;
             right: 10%;
-            border-top: 1.5px dashed #6ba66b;
+            height: 3px;
+            background: linear-gradient(90deg, #6ba66b 60%, transparent 40%);
+            background-size: 20px 100%;
             z-index: 0;
+            animation: dashflow 0.8s linear infinite;
+            filter: drop-shadow(0 0 4px rgba(107, 166, 107, 0.6));
+        }
+
+        @keyframes dashflow {
+            to {
+                background-position: 20px 0;
+            }
         }
 
         .process-card {
@@ -568,6 +571,13 @@
             background: #fff;
             text-align: center;
             box-shadow: 0 12px 30px rgba(13, 46, 28, .06);
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s, box-shadow 0.3s;
+            transform-style: preserve-3d;
+        }
+
+        .process-card:hover {
+            border-color: rgba(112, 224, 0, 0.25);
+            box-shadow: 0 16px 35px rgba(7, 24, 16, 0.08);
         }
 
         .step-number {
@@ -614,7 +624,7 @@
 ===================================================== */
 
         .final-cta {
-            padding: 0 0 55px;
+            padding: 55px 0 55px; /* Added top padding */
             background: #fafaf7;
         }
 
@@ -659,12 +669,14 @@
             font-family: 'Playfair Display', serif;
             font-size: 28px;
             font-weight: 600;
+            color: #ffffff !important; /* Make this text color white color */
         }
 
         .cta-box p {
             margin-top: 4px;
-            color: #dce5df;
+            color: #ffffff !important; /* Make this text color white color */
             font-size: 14px;
+            opacity: 0.9;
         }
 
         .cta-button {
@@ -854,6 +866,15 @@
 
 <body>
 
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">BEYOND GREEN</div>
+    </div>
+
+    <!-- Shared Header loaded dynamically -->
+    <header class="header" id="header-placeholder"></header>
+
     <!-- =====================================================
      HERO
 ===================================================== -->
@@ -861,35 +882,6 @@
     <section class="hero">
 
         <div class="container">
-
-            <nav class="navbar">
-
-                <a class="logo" href="#">
-                    <div class="logo-mark">
-                        <i class="fa-solid fa-leaf"></i>
-                    </div>
-
-                    <div class="logo-text">
-                        <strong>BEYOND</strong>
-                        <small>GREEN & NATURE</small>
-                    </div>
-                </a>
-
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a class="active" href="#">Projects</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-
-                <a class="nav-cta" href="#">
-                    Get Free Site Visit
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </nav>
 
             <div class="hero-content">
 
@@ -900,7 +892,7 @@
                 </div>
 
                 <h1 class="hero-title">
-                    Our <span class="green">Projects</span>
+                    <span class="parrot-green">Our</span> <span class="green">Projects</span>
                 </h1>
 
                 <div class="hero-line"></div>
@@ -958,11 +950,6 @@
                     Vertical Gardens
                 </button>
 
-                <button class="filter-btn" data-filter="water">
-                    <i class="fa-solid fa-droplet"></i>
-                    Water Features
-                </button>
-
             </div>
 
         </div>
@@ -1001,19 +988,13 @@
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
-                    <a href="#" class="view-link">
-                        View All Projects
-                        <i class="fa-regular fa-circle-right"></i>
-                    </a>
-
                 </div>
 
 
                 <div class="projects-grid reveal">
 
                     <article class="project-card large-a" data-category="villa residential">
-                        <img
-                            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=90">
+                        <img src="images%20and%20videos/project_1.jpg">
 
                         <div class="project-info">
                             <h3>Luxury Villa Landscape</h3>
@@ -1026,8 +1007,7 @@
 
 
                     <article class="project-card large-b" data-category="residential">
-                        <img
-                            src="https://images.unsplash.com/photo-1600607688960-e095ff83135c?auto=format&fit=crop&w=900&q=90">
+                        <img src="images%20and%20videos/project_2.jpg">
 
                         <div class="project-info">
                             <h3>Modern Garden Retreat</h3>
@@ -1039,23 +1019,11 @@
                     </article>
 
 
-                    <article class="project-card small" data-category="water">
-                        <img
-                            src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=90">
 
-                        <div class="project-info">
-                            <h3>Water Feature Garden</h3>
-                            <div class="location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Hyderabad
-                            </div>
-                        </div>
-                    </article>
 
 
                     <article class="project-card small" data-category="rooftop">
-                        <img
-                            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=90">
+                        <img src="images%20and%20videos/project_4.jpg">
 
                         <div class="project-info">
                             <h3>Rooftop Garden</h3>
@@ -1068,8 +1036,7 @@
 
 
                     <article class="project-card small" data-category="vertical">
-                        <img
-                            src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=900&q=90">
+                        <img src="images%20and%20videos/service_1.jpg">
 
                         <div class="project-info">
                             <h3>Vertical Green Wall</h3>
@@ -1082,8 +1049,7 @@
 
 
                     <article class="project-card bottom" data-category="commercial">
-                        <img
-                            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=90">
+                        <img src="images%20and%20videos/service_2.jpg">
 
                         <div class="project-info">
                             <h3>Commercial Landscape</h3>
@@ -1096,8 +1062,7 @@
 
 
                     <article class="project-card bottom" data-category="residential">
-                        <img
-                            src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=90">
+                        <img src="images%20and%20videos/service_3.jpg">
 
                         <div class="project-info">
                             <h3>Tropical Courtyard</h3>
@@ -1110,8 +1075,7 @@
 
 
                     <article class="project-card bottom" data-category="commercial">
-                        <img
-                            src="https://images.unsplash.com/photo-1598901986949-f593d5d8e7b9?auto=format&fit=crop&w=1000&q=90">
+                        <img src="images%20and%20videos/service_4.jpg">
 
                         <div class="project-info">
                             <h3>Avenue Plantation</h3>
@@ -1345,8 +1309,45 @@
 
     </section>
 
+    <!-- Dynamic Shared Footer loaded here -->
+    <footer class="footer" id="footer-placeholder"></footer>
+
+    <!-- Loader Script -->
+    <script src="theme-loader.js"></script>
 
     <script>
+        // Preloader Screen dismissal logic
+        const hidePreloader = () => {
+            const preloader = document.getElementById('preloader');
+            if (!preloader) return;
+            setTimeout(() => {
+                preloader.classList.add('fade-out');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 600);
+            }, 800);
+        };
+
+        if (document.readyState === 'complete') {
+            hidePreloader();
+        } else {
+            window.addEventListener('load', hidePreloader);
+        }
+
+        // Custom Cursor follower hooks
+        const cursor = document.querySelector('.custom-cursor');
+        const follower = document.querySelector('.custom-cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            if (cursor && follower) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                setTimeout(() => {
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                }, 50);
+            }
+        });
 
         /* =====================================================
            PROJECT FILTER
@@ -1420,7 +1421,7 @@
 
 
         /* =====================================================
-           IMAGE HOVER DEPTH
+           IMAGE HOVER DEPTH (3D PARALLAX TILT EFFECT)
         ===================================================== */
 
         projectCards.forEach(card => {
@@ -1432,25 +1433,52 @@
                 const x = event.clientX - rect.left;
                 const y = event.clientY - rect.top;
 
-                const rotateX = ((y / rect.height) - .5) * -2;
-                const rotateY = ((x / rect.width) - .5) * 2;
+                const rotateX = ((y / rect.height) - .5) * -12;
+                const rotateY = ((x / rect.width) - .5) * 12;
 
                 card.style.transform =
-                    `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                    `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`;
 
             });
 
             card.addEventListener('mouseleave', () => {
 
                 card.style.transform =
-                    'perspective(800px) rotateX(0deg) rotateY(0deg)';
+                    'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
 
             });
 
         });
 
+        /* =====================================================
+           PROCESS CARD 3D TILT EFFECT
+        ===================================================== */
+        const processCards = document.querySelectorAll('.process-card');
+        processCards.forEach(card => {
+            card.addEventListener('mousemove', event => {
+                const rect = card.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
+
+                const rotateX = ((y / rect.height) - .5) * -12;
+                const rotateY = ((x / rect.width) - .5) * 12;
+
+                card.style.transform =
+                    `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.04, 1.04, 1.04)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform =
+                    'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+            });
+        });
+
     </script>
 
+    <!-- Custom Cursor & Leaves elements -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    <div class="leaves-container"></div>
 </body>
 
 </html>
