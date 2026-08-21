@@ -1,0 +1,243 @@
+/* ==========================================================
+   RESPONSIVE HARDENING LAYER
+   Consistent behavior on every phone, tablet, laptop, desktop.
+   Appended last so these rules win the cascade.
+   ========================================================== */
+
+/* --- Global safeguards --- */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-x: clip; /* modern browsers: no sticky/scroll side effects */
+  max-width: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+}
+
+/* --- Header / navigation: one consistent breakpoint set --- */
+/* Phones, tablets and small laptops: hamburger + drawer */
+@media (max-width: 991px) {
+  .nav-menu,
+  .nav-container > .cta-header-btn {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block !important;
+  }
+}
+
+/* Laptops and desktops: horizontal nav, drawer fully disabled */
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+}
+
+/* --- Mobile drawer polish --- */
+.mobile-nav {
+  width: min(320px, 86vw);
+  max-height: 100vh;
+  max-height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 96px 28px 40px;
+  padding-right: calc(28px + env(safe-area-inset-right, 0px));
+  padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  box-shadow: -12px 0 40px rgba(3, 29, 18, 0.28);
+}
+
+.mobile-nav .nav-link {
+  display: block;
+  min-height: 48px;
+  line-height: 48px;
+}
+
+/* --- Touch comfort --- */
+@media (hover: none) and (pointer: coarse) {
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* --- Prevent iOS auto-zoom when focusing form fields --- */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* Compact header on mobile screens */
+  header {
+    padding: 1.2rem 5% !important;
+  }
+  header.scrolled {
+    padding: 0.7rem 5% !important;
+  }
+  .logo img {
+    height: 60px !important;
+  }
+  header.scrolled .logo img {
+    height: 50px !important;
+  }
+  .menu-toggle {
+    margin-right: 0.2rem;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* --- Grid children never blow out their columns --- */
+.footer-container > *,
+.features-grid > *,
+.services-cards-grid-4 > *,
+.blog-grid > *,
+.commitment-cards-grid > *,
+.why-choose-columns > *,
+.about-purpose-container > *,
+.testimonials-container > *,
+.about-stats-bar-container > * {
+  min-width: 0;
+}
+
+/* --- Fluid typography on small phones --- */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: clamp(1.9rem, 8.5vw, 2.6rem);
+  }
+
+  .about-title {
+    font-size: clamp(1.6rem, 7.5vw, 2.2rem);
+  }
+}
+
+/* --- Very small phones (360px and below) --- */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .nav-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* --- Short landscape phones: keep the hero compact --- */
+@media (max-width: 991px) and (max-height: 480px) {
+  .hero {
+    min-height: auto;
+  }
+}
+
+/* ==========================================================
+   ABOUT PAGE POLISH
+   Keeps every about.html section clean from 320px to 4K.
+   ========================================================== */
+
+/* Fluid hero + CTA strip headings (all viewports) */
+.about-hero-title {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.cta-strip-title {
+  font-size: clamp(1.4rem, 3.2vw, 2.2rem);
+}
+
+/* Process journey: decorative SVG path must never force sideways scroll */
+.tm-process-path {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablets & below: tighten process container */
+@media (max-width: 1024px) {
+  .tm-process-container {
+    width: min(100% - 40px, 1280px);
+    margin-inline: auto;
+  }
+}
+
+/* Phones: vertical process list, no absolute-positioned cards overflowing */
+@media (max-width: 768px) {
+  .tm-process-item {
+    position: static !important;
+    transform: none !important;
+    margin: 0 0 18px;
+  }
+
+  .tm-process-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tm-process-bg-decoration {
+    display: none;
+  }
+
+  /* About sections breathe on small screens */
+  .about-purpose-section,
+  .about-story-section,
+  .about-philosophy-section,
+  .about-commitment-section,
+  .about-stats-bar-section,
+  .about-cta-strip-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Collage images scale instead of overlapping awkwardly */
+  .purpose-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Stats bar wraps into a tidy centered column */
+  .about-stats-bar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+  }
+
+  /* Timeline nodes align with stacked rows */
+  .timeline-track-container {
+    padding-left: 0;
+  }
+}
+
+/* Very small phones (320–360px): extra-tight type */
+@media (max-width: 360px) {
+  .about-hero-title {
+    font-size: 1.7rem;
+  }
+
+  .purpose-title,
+  .philosophy-title,
+  .commitment-title {
+    font-size: 1.45rem;
+  }
+
+  .story-card-title {
+    font-size: 1.35rem;
+  }
+}
