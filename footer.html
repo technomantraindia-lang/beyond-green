@@ -1,27 +1,29 @@
 <style>
   .footer {
-      padding-top: 40px !important; /* Clear large blank white space at top */
+      padding-top: 40px !important;
+      background: #ffffff;
+      color: #062719;
   }
 
   .footer-container {
       display: grid;
       grid-template-columns: 2fr 1fr 1.2fr 1.5fr 1.5fr;
       gap: 40px;
-      padding: 20px 0 60px; /* Reduced top padding to align nicely */
-      width: min(1400px, calc(100% - 48px)); /* Match page layout width and remove white space */
+      padding: 20px 0 60px;
+      width: min(1400px, calc(100% - 48px));
       margin: auto;
   }
   
   .col-brand {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; /* Left-align logo and items horizontally */
-      text-align: left;        /* Left-align description paragraph */
+      align-items: flex-start;
+      text-align: left;
   }
 
   .footer-logo {
       display: inline-block;
-      max-width: 140px;
+      max-width: 160px;
       margin-bottom: 20px;
       transition: transform 0.3s ease;
   }
@@ -40,14 +42,14 @@
   .brand-desc {
       font-size: 14px;
       line-height: 1.6;
-      color: #67756e; /* Dark grey/green text color */
+      color: #556b60;
       margin-bottom: 25px;
       max-width: 280px;
   }
 
   .footer-socials {
       display: flex;
-      justify-content: flex-start; /* Left-align social icons */
+      justify-content: flex-start;
       gap: 12px;
       margin-top: 5px;
   }
@@ -56,19 +58,24 @@
       width: 38px;
       height: 38px;
       border-radius: 50%;
-      background: rgba(6, 39, 25, 0.05); /* Light backdrop for white background */
-      display: grid;
-      place-items: center;
-      color: #062719; /* Dark green icon */
+      background: rgba(6, 39, 25, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #062719;
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      border: 1px solid rgba(6, 39, 25, 0.1);
+      border: 1px solid rgba(6, 39, 25, 0.12);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: inherit;
   }
 
   .footer-socials a:hover {
       background: #6bd20f;
       color: #ffffff;
       transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(107, 210, 15, 0.3);
+      box-shadow: 0 5px 15px rgba(107, 210, 15, 0.35);
       border-color: #6bd20f;
   }
 
@@ -80,7 +87,7 @@
   .footer-col-title {
       font-size: 16px;
       font-weight: 700;
-      color: #062719; /* Dark green title */
+      color: #062719;
       margin-bottom: 25px;
       position: relative;
   }
@@ -100,12 +107,18 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      padding: 0;
+      margin: 0;
   }
 
   .footer-links a {
       font-size: 14px;
-      color: #67756e; /* Dark text */
+      color: #556b60;
       transition: all 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
   }
 
   .footer-links a:hover {
@@ -113,20 +126,36 @@
       padding-left: 5px;
   }
 
+  .link-chevron {
+      display: none;
+  }
+
   .footer-contact-list {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 15px;
+      padding: 0;
+      margin: 0;
   }
 
   .footer-contact-list li {
       display: flex;
       gap: 12px;
       align-items: flex-start;
-      color: #67756e; /* Dark text */
+      color: #556b60;
       font-size: 14px;
       line-height: 1.5;
+  }
+
+  .footer-contact-list a {
+      color: #556b60;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+
+  .footer-contact-list a:hover {
+      color: #6bd20f;
   }
 
   .contact-icon {
@@ -134,8 +163,8 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background: rgba(107, 210, 15, 0.1);
-      color: #2c6e43; /* Dark green icon */
+      background: rgba(107, 210, 15, 0.12);
+      color: #2c6e43;
       display: grid;
       place-items: center;
   }
@@ -157,7 +186,7 @@
 
   .newsletter-text {
       font-size: 14px;
-      color: #67756e; /* Dark text */
+      color: #556b60;
       line-height: 1.5;
       margin-bottom: 18px;
   }
@@ -173,9 +202,9 @@
       width: 100%;
       padding: 12px 50px 12px 16px;
       background: #ffffff;
-      border: 1px solid rgba(6, 39, 25, 0.15);
+      border: 1px solid rgba(6, 39, 25, 0.18);
       border-radius: 30px;
-      color: #062719; /* Dark text input */
+      color: #062719;
       font-size: 13px;
       outline: none;
       transition: all 0.3s;
@@ -183,8 +212,7 @@
 
   .newsletter-form input:focus {
       border-color: #6bd20f;
-      background: #ffffff;
-      box-shadow: 0 0 10px rgba(107, 210, 15, 0.15);
+      box-shadow: 0 0 10px rgba(107, 210, 15, 0.2);
   }
 
   .newsletter-form button {
@@ -217,7 +245,8 @@
   .footer-bottom {
       border-top: 1px solid rgba(6, 39, 25, 0.08);
       padding: 25px 0;
-      background: #031d12;
+      background: #062719;
+      color: rgba(255, 255, 255, 0.7);
   }
 
   .footer-bottom-container {
@@ -228,7 +257,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 15px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.7);
       font-size: 13px;
   }
 
@@ -238,8 +267,9 @@
   }
 
   .footer-legal-links a {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.7);
       transition: color 0.3s;
+      text-decoration: none;
   }
 
   .footer-legal-links a:hover {
@@ -256,16 +286,229 @@
       }
   }
 
-  @media(max-width: 575px) {
+  /* ----------------------------------------------------
+     MOBILE FOOTER LAYOUT (White / Light Clean Theme)
+     ---------------------------------------------------- */
+  @media(max-width: 768px) {
+      .footer {
+          padding: 16px 12px 30px !important;
+          background: #ffffff;
+      }
+
       .footer-container {
-          grid-template-columns: 1fr;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          padding: 24px 16px;
+          width: 100%;
+          max-width: 480px;
+          margin: 0 auto;
+          background: #ffffff;
+          border: 1px solid rgba(6, 39, 25, 0.12);
+          border-radius: 24px;
+          box-shadow: 0 10px 30px rgba(6, 39, 25, 0.07);
+          box-sizing: border-box;
       }
+
       .col-brand {
-          grid-column: span 1;
+          grid-column: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding-bottom: 8px;
+          width: 100%;
       }
+
+      .footer-logo {
+          background: transparent;
+          box-shadow: none;
+          padding: 0;
+          margin-bottom: 18px;
+          max-width: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .footer-logo img {
+          max-height: 52px;
+          width: auto;
+      }
+
+      .brand-desc {
+          text-align: center;
+          color: #556b60;
+          font-size: 14px;
+          line-height: 1.6;
+          max-width: 340px;
+          margin-bottom: 22px;
+      }
+
+      .footer-socials {
+          justify-content: center;
+          gap: 10px;
+          margin-bottom: 10px;
+          width: 100%;
+      }
+
+      .footer-socials a {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgba(6, 39, 25, 0.05);
+          border: 1px solid rgba(6, 39, 25, 0.12);
+          color: #062719;
+          font-size: 13px;
+          font-weight: 700;
+      }
+
+      .footer-socials a:hover,
+      .footer-socials a:active {
+          background: #6bd20f;
+          color: #ffffff;
+          border-color: #6bd20f;
+      }
+
+      /* Section card boxes */
+      .footer-col:not(.col-brand) {
+          background: #f8faf9;
+          border: 1px solid rgba(6, 39, 25, 0.08);
+          border-radius: 18px;
+          padding: 20px 16px;
+          width: 100%;
+          box-sizing: border-box;
+      }
+
+      .footer-col-title {
+          color: #062719;
+          font-size: 16px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.6px;
+          margin-bottom: 4px;
+          position: relative;
+      }
+
+      .footer-col-title::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          width: 36px;
+          height: 3px;
+          background: #6bd20f;
+          border-radius: 2px;
+      }
+
+      /* Full width button-style links */
+      .footer-links {
+          margin-top: 18px;
+          gap: 10px;
+      }
+
+      .footer-links a {
+          background: #ffffff;
+          border: 1px solid rgba(6, 39, 25, 0.08);
+          border-radius: 12px;
+          padding: 14px 18px;
+          color: #062719;
+          font-size: 14px;
+          font-weight: 600;
+          transition: all 0.25s ease;
+          width: 100%;
+          box-sizing: border-box;
+      }
+
+      .footer-links a:hover,
+      .footer-links a:active {
+          background: #062719;
+          border-color: #062719;
+          color: #ffffff;
+          padding-left: 18px;
+          transform: translateX(2px);
+      }
+
+      .link-chevron {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .link-chevron svg {
+          stroke: #6bd20f;
+          width: 16px;
+          height: 16px;
+          transition: transform 0.2s ease;
+      }
+
+      .footer-links a:hover .link-chevron svg,
+      .footer-links a:active .link-chevron svg {
+          stroke: #6bd20f;
+          transform: translateX(3px);
+      }
+
+      /* Mobile Contact Info Card Items */
+      .footer-contact-list {
+          margin-top: 18px;
+          gap: 10px;
+      }
+
+      .footer-contact-list li {
+          background: #ffffff;
+          border: 1px solid rgba(6, 39, 25, 0.08);
+          border-radius: 12px;
+          padding: 14px 18px;
+          color: #062719;
+          align-items: center;
+      }
+
+      .footer-contact-list a {
+          color: #062719;
+          font-weight: 600;
+      }
+
+      .contact-icon {
+          background: rgba(107, 210, 15, 0.15);
+          color: #2c6e43;
+      }
+
+      /* Mobile Newsletter Form */
+      .newsletter-text {
+          margin-top: 16px;
+          color: #556b60;
+      }
+
+      .newsletter-form {
+          max-width: 100%;
+      }
+
+      .newsletter-form input {
+          background: #ffffff;
+          border: 1px solid rgba(6, 39, 25, 0.15);
+          padding: 14px 50px 14px 18px;
+          border-radius: 12px;
+          color: #062719;
+      }
+
+      .newsletter-form input:focus {
+          border-color: #6bd20f;
+      }
+
+      .newsletter-form button {
+          background: #6bd20f;
+          color: #ffffff;
+          right: 6px;
+          top: 6px;
+          bottom: 6px;
+          width: 38px;
+          border-radius: 8px;
+      }
+
       .footer-bottom-container {
           flex-direction: column;
           text-align: center;
+          gap: 12px;
       }
   }
 </style>
@@ -294,11 +537,46 @@
   <div class="footer-col">
     <h3 class="footer-col-title">Quick Links</h3>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="service.html">Services</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="CONTACTUS.HTML">Contact Us</a></li>
+      <li>
+        <a href="index.html">
+          <span>Home</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          <span>About Us</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="service.html">
+          <span>Services</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="project.html">
+          <span>Projects</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="CONTACTUS.HTML">
+          <span>Contact Us</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -306,12 +584,54 @@
   <div class="footer-col">
     <h3 class="footer-col-title">Our Services</h3>
     <ul class="footer-links">
-      <li><a href="service.html">Landscape Design</a></li>
-      <li><a href="service.html">Landscape Execution</a></li>
-      <li><a href="service.html">Rooftop Gardens</a></li>
-      <li><a href="service.html">Vertical Green Walls</a></li>
-      <li><a href="service.html">Irrigation Systems</a></li>
-      <li><a href="service.html">AMC & Maintenance</a></li>
+      <li>
+        <a href="service.html">
+          <span>Landscape Design</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="service.html">
+          <span>Landscape Execution</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="service.html">
+          <span>Rooftop Gardens</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="service.html">
+          <span>Vertical Green Walls</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="service.html">
+          <span>Irrigation Systems</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="service.html">
+          <span>AMC & Maintenance</span>
+          <span class="link-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -337,7 +657,7 @@
         <span class="contact-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
         </span>
-        <span>A-5, Kalapurnam Complex,<br>Nr. Municipal Market, C.G Road,<br>Ahmedabad, Gujarat - 380009</span>
+        <span>A-5, Kalapurnam Complex, Nr. Municipal Market, C.G Road, Ahmedabad, Gujarat - 380009</span>
       </li>
     </ul>
   </div>
@@ -364,8 +684,8 @@
   <div class="footer-bottom-container">
     <span>&copy; 2026 Beyond Green & Nature. All Rights Reserved.</span>
     <div class="footer-legal-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms & Conditions</a>
     </div>
   </div>
 </div>

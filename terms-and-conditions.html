@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Terms & Conditions - Beyond Green & Nature. Guidelines and agreements governing our landscape design, execution, and maintenance services.">
+  <title>Terms & Conditions | Beyond Green & Nature</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="_responsive-hardening.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images%20and%20videos/bg%20%20logo.png">
+  
+  <style>
+    /* Global Safeguards for Mobile Viewport */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* Legal Pages Custom Styling */
+    .legal-hero {
+      background: linear-gradient(135deg, #062719 0%, #03160e 100%);
+      padding: 120px 20px 60px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-hero::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(107, 210, 15, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .legal-hero-container {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .legal-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .legal-breadcrumb a {
+      color: #6bd20f;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .legal-breadcrumb a:hover {
+      color: #ffffff;
+    }
+
+    .legal-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 16px;
+      word-wrap: break-word;
+    }
+
+    .legal-subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 650px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .legal-last-updated {
+      font-size: 13px;
+      color: #6bd20f;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* Content Area */
+    .legal-content-section {
+      background: #f8faf9;
+      padding: 50px 16px 80px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .legal-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 36px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-container > * {
+      min-width: 0; /* Critical CSS Grid item fix for horizontal blowout */
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Sidebar Navigation */
+    .legal-sidebar {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 22px 18px;
+      border: 1px solid rgba(6, 39, 25, 0.1);
+      box-shadow: 0 8px 25px rgba(6, 39, 25, 0.04);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-sidebar-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #062719;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #6bd20f;
+    }
+
+    .legal-sidebar-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .legal-sidebar-nav a {
+      font-size: 14px;
+      color: #556b60;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      display: block;
+      transition: all 0.25s ease;
+      font-weight: 500;
+    }
+
+    .legal-sidebar-nav a:hover,
+    .legal-sidebar-nav a.active {
+      background: rgba(107, 210, 15, 0.12);
+      color: #062719;
+      font-weight: 700;
+      padding-left: 18px;
+    }
+
+    /* Main Content Area */
+    .legal-body {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px 30px;
+      border: 1px solid rgba(6, 39, 25, 0.1);
+      box-shadow: 0 10px 30px rgba(6, 39, 25, 0.04);
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .legal-card {
+      margin-bottom: 36px;
+      scroll-margin-top: 110px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-card-heading {
+      font-size: clamp(1.2rem, 3vw, 1.45rem);
+      font-weight: 700;
+      color: #062719;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      word-wrap: break-word;
+    }
+
+    .legal-card-heading .badge-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(107, 210, 15, 0.15);
+      color: #2c6e43;
+      font-size: 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .legal-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #4a5c53;
+      margin-bottom: 14px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .legal-card ul {
+      margin: 12px 0 18px 20px;
+      padding: 0;
+      color: #4a5c53;
+      font-size: 15px;
+      line-height: 1.7;
+      width: calc(100% - 20px);
+      box-sizing: border-box;
+    }
+
+    .legal-card li {
+      margin-bottom: 8px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .highlight-box {
+      background: rgba(107, 210, 15, 0.08);
+      border-left: 4px solid #6bd20f;
+      padding: 16px 18px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: #062719;
+      font-weight: 600;
+    }
+
+    .contact-box {
+      background: #062719;
+      color: #ffffff;
+      padding: 24px 20px;
+      border-radius: 18px;
+      margin-top: 30px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .contact-box h4 {
+      color: #6bd20f;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .contact-box a {
+      color: #6bd20f;
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    /* Mobile Responsive Hardening */
+    @media (max-width: 991px) {
+      .legal-content-section {
+        padding: 30px 12px 60px;
+      }
+
+      .legal-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .legal-sidebar {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px 14px;
+        overflow: hidden;
+      }
+
+      .legal-sidebar-nav {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 6px;
+        gap: 8px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .legal-sidebar-nav a {
+        white-space: nowrap;
+        background: #f8faf9;
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+
+      .legal-body {
+        padding: 24px 16px;
+        border-radius: 18px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .legal-card ul {
+        margin-left: 16px;
+        width: calc(100% - 16px);
+      }
+    }
+
+    @media (max-width: 575px) {
+      .legal-hero {
+        padding: 90px 14px 40px;
+      }
+
+      .legal-body {
+        padding: 20px 14px;
+        border-radius: 16px;
+      }
+
+      .legal-card-heading {
+        font-size: 1.15rem;
+        gap: 8px;
+      }
+
+      .legal-card p, .legal-card li {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Placeholder loaded dynamically via theme-loader.js -->
+  <header id="header">
+    <div id="header-placeholder"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="legal-hero">
+    <div class="legal-hero-container">
+      <div class="legal-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span>Terms & Conditions</span>
+      </div>
+      <h1 class="legal-title">Terms & Conditions</h1>
+      <p class="legal-subtitle">
+        Please read these terms and conditions carefully before engaging our landscape design, execution, or maintenance services.
+      </p>
+      <span class="legal-last-updated">Last Updated: September 2026</span>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="legal-content-section">
+    <div class="legal-container">
+
+      <!-- Navigation Sidebar -->
+      <aside class="legal-sidebar">
+        <div class="legal-sidebar-title">Quick Navigation</div>
+        <ul class="legal-sidebar-nav">
+          <li><a href="#section-1" class="active">1. Acceptance of Terms</a></li>
+          <li><a href="#section-2">2. Scope of Services</a></li>
+          <li><a href="#section-3">3. Quotations & Payments</a></li>
+          <li><a href="#section-4">4. Site Access & Prep</a></li>
+          <li><a href="#section-5">5. Modifications</a></li>
+          <li><a href="#section-6">6. Plant Care Warranty</a></li>
+          <li><a href="#section-7">7. IP Ownership</a></li>
+          <li><a href="#section-8">8. Jurisdiction & Legal</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Body -->
+      <main class="legal-body">
+
+        <!-- Section 1 -->
+        <article id="section-1" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">1</span>
+            Acceptance of Terms
+          </h2>
+          <p>
+            By accessing our website or accepting a proposal/quotation from <strong>Beyond Green & Nature</strong>, you agree to be bound by these Terms & Conditions.
+          </p>
+          <p>
+            These terms constitute a legally binding agreement between the Client ("you") and Beyond Green & Nature regarding all landscape design, execution, irrigation, vertical green wall, rooftop garden, and AMC maintenance services.
+          </p>
+        </article>
+
+        <!-- Section 2 -->
+        <article id="section-2" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">2</span>
+            Scope of Services
+          </h2>
+          <p>
+            Beyond Green & Nature provides professional landscape architecture, 3D/2D layout design, site execution, automatic irrigation installation, and recurring garden maintenance services.
+          </p>
+          <ul>
+            <li>The precise scope of work, timeline, and material specifications will be defined in the approved project contract or estimate.</li>
+            <li>Any additional work requested outside the agreed quotation will be treated as a variation order and billed accordingly.</li>
+          </ul>
+        </article>
+
+        <!-- Section 3 -->
+        <article id="section-3" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">3</span>
+            Quotations & Payment Terms
+          </h2>
+          <p>All project quotations provided by Beyond Green & Nature are valid for 30 days from the date of issuance unless stated otherwise.</p>
+          <ul>
+            <li><strong>Advance Mobilization Deposit:</strong> A non-refundable initial deposit (typically 40%–50%) is required prior to site mobilization and procurement of plants/materials.</li>
+            <li><strong>Progress Payments:</strong> Milestone payments must be cleared as specified in the project schedule upon completion of designated stages (e.g., hardscaping, soil prep, planting).</li>
+            <li><strong>Final Settlement:</strong> The remaining balance is payable immediately upon final project handover and inspection.</li>
+          </ul>
+          <div class="highlight-box">
+            <p>Delayed payments may result in temporary work suspension on site and rescheduling of material deliveries.</p>
+          </div>
+        </article>
+
+        <!-- Section 4 -->
+        <article id="section-4" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">4</span>
+            Site Access & Preparation Responsibilities
+          </h2>
+          <p>The Client is responsible for ensuring clear, safe, and unimpeded access to the project site during agreed working hours.</p>
+          <ul>
+            <li>Provision of continuous water supply and electrical power necessary for site execution and initial plant watering.</li>
+            <li>Identifying and disclosing all underground utilities, pipelines, cables, and structural constraints prior to excavation or hardscape installation.</li>
+          </ul>
+        </article>
+
+        <!-- Section 5 -->
+        <article id="section-5" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">5</span>
+            Project Modifications & Variations
+          </h2>
+          <p>
+            Any modifications to approved 2D/3D master plans, plant selection changes, or structural additions requested by the client after project commencement must be submitted in writing.
+          </p>
+          <p>
+            Variation charges and adjusted timelines will be communicated and agreed upon before executing the altered scope.
+          </p>
+        </article>
+
+        <!-- Section 6 -->
+        <article id="section-6" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">6</span>
+            Plant Care & Warranty Guidelines
+          </h2>
+          <p>
+            Living plants, lawn turf, and flora require ongoing care, proper watering, sunlight, and nourishment.
+          </p>
+          <ul>
+            <li><strong>Replacement Warranty:</strong> Plants supplied and installed by Beyond Green & Nature carry a 14-day health replacement warranty, provided the client follows recommended watering and care instructions.</li>
+            <li><strong>Exclusions:</strong> Warranty does not cover damage caused by natural extreme weather (hail, frost, storm), inadequate watering by client, pest infestation due to neglected maintenance, or unauthorized chemical applications.</li>
+            <li>For long-term peace of mind, we recommend our Annual Maintenance Contract (AMC) package.</li>
+          </ul>
+        </article>
+
+        <!-- Section 7 -->
+        <article id="section-7" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">7</span>
+            Intellectual Property & Design Ownership
+          </h2>
+          <p>
+            All custom 3D renders, CAD drawings, planting schemes, concept designs, and photographs created by Beyond Green & Nature remain the intellectual property of Beyond Green & Nature.
+          </p>
+          <p>
+            Designs may not be reproduced or transferred to third-party contractors without explicit written authorization.
+          </p>
+        </article>
+
+        <!-- Section 8 -->
+        <article id="section-8" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">8</span>
+            Governing Law & Jurisdiction
+          </h2>
+          <p>
+            These Terms & Conditions are governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with our services shall be subject to the exclusive jurisdiction of the courts in <strong>Ahmedabad, Gujarat, India</strong>.
+          </p>
+          
+          <div class="contact-box">
+            <h4>Questions Regarding Our Terms?</h4>
+            <p><strong>Address:</strong> A-5, Kalapurnam Complex, Nr. Municipal Market, C.G Road, Ahmedabad, Gujarat - 380009</p>
+            <p><strong>Phone:</strong> <a href="tel:+918849637315">+91 88496 37315</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@beyondgreenandnature.in">info@beyondgreenandnature.in</a></p>
+          </div>
+        </article>
+
+      </main>
+    </div>
+  </section>
+
+  <!-- Shared Footer Placeholder -->
+  <footer class="footer">
+    <div id="footer-placeholder"></div>
+  </footer>
+
+  <script src="theme-loader.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Privacy Policy - Beyond Green & Nature. Learn how we handle, protect, and safeguard your personal information and site project details.">
+  <title>Privacy Policy | Beyond Green & Nature</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="_responsive-hardening.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images%20and%20videos/bg%20%20logo.png">
+  
+  <style>
+    /* Global Safeguards for Mobile Viewport */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* Legal Pages Custom Styling */
+    .legal-hero {
+      background: linear-gradient(135deg, #062719 0%, #03160e 100%);
+      padding: 120px 20px 60px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-hero::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(107, 210, 15, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .legal-hero-container {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .legal-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .legal-breadcrumb a {
+      color: #6bd20f;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .legal-breadcrumb a:hover {
+      color: #ffffff;
+    }
+
+    .legal-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 16px;
+      word-wrap: break-word;
+    }
+
+    .legal-subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 650px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .legal-last-updated {
+      font-size: 13px;
+      color: #6bd20f;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* Content Area */
+    .legal-content-section {
+      background: #f8faf9;
+      padding: 50px 16px 80px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .legal-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 36px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-container > * {
+      min-width: 0; /* Critical CSS Grid item fix for horizontal blowout */
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Sidebar Navigation */
+    .legal-sidebar {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 22px 18px;
+      border: 1px solid rgba(6, 39, 25, 0.1);
+      box-shadow: 0 8px 25px rgba(6, 39, 25, 0.04);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-sidebar-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #062719;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #6bd20f;
+    }
+
+    .legal-sidebar-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .legal-sidebar-nav a {
+      font-size: 14px;
+      color: #556b60;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      display: block;
+      transition: all 0.25s ease;
+      font-weight: 500;
+    }
+
+    .legal-sidebar-nav a:hover,
+    .legal-sidebar-nav a.active {
+      background: rgba(107, 210, 15, 0.12);
+      color: #062719;
+      font-weight: 700;
+      padding-left: 18px;
+    }
+
+    /* Main Content Area */
+    .legal-body {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px 30px;
+      border: 1px solid rgba(6, 39, 25, 0.1);
+      box-shadow: 0 10px 30px rgba(6, 39, 25, 0.04);
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .legal-card {
+      margin-bottom: 36px;
+      scroll-margin-top: 110px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .legal-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-card-heading {
+      font-size: clamp(1.2rem, 3vw, 1.45rem);
+      font-weight: 700;
+      color: #062719;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      word-wrap: break-word;
+    }
+
+    .legal-card-heading .badge-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(107, 210, 15, 0.15);
+      color: #2c6e43;
+      font-size: 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .legal-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #4a5c53;
+      margin-bottom: 14px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .legal-card ul {
+      margin: 12px 0 18px 20px;
+      padding: 0;
+      color: #4a5c53;
+      font-size: 15px;
+      line-height: 1.7;
+      width: calc(100% - 20px);
+      box-sizing: border-box;
+    }
+
+    .legal-card li {
+      margin-bottom: 8px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .highlight-box {
+      background: rgba(107, 210, 15, 0.08);
+      border-left: 4px solid #6bd20f;
+      padding: 16px 18px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: #062719;
+      font-weight: 600;
+    }
+
+    .contact-box {
+      background: #062719;
+      color: #ffffff;
+      padding: 24px 20px;
+      border-radius: 18px;
+      margin-top: 30px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .contact-box h4 {
+      color: #6bd20f;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .contact-box a {
+      color: #6bd20f;
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    /* Mobile Responsive Hardening */
+    @media (max-width: 991px) {
+      .legal-content-section {
+        padding: 30px 12px 60px;
+      }
+
+      .legal-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .legal-sidebar {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px 14px;
+        overflow: hidden;
+      }
+
+      .legal-sidebar-nav {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 6px;
+        gap: 8px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .legal-sidebar-nav a {
+        white-space: nowrap;
+        background: #f8faf9;
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+
+      .legal-body {
+        padding: 24px 16px;
+        border-radius: 18px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .legal-card ul {
+        margin-left: 16px;
+        width: calc(100% - 16px);
+      }
+    }
+
+    @media (max-width: 575px) {
+      .legal-hero {
+        padding: 90px 14px 40px;
+      }
+
+      .legal-body {
+        padding: 20px 14px;
+        border-radius: 16px;
+      }
+
+      .legal-card-heading {
+        font-size: 1.15rem;
+        gap: 8px;
+      }
+
+      .legal-card p, .legal-card li {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Placeholder loaded dynamically via theme-loader.js -->
+  <header id="header">
+    <div id="header-placeholder"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="legal-hero">
+    <div class="legal-hero-container">
+      <div class="legal-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span>Privacy Policy</span>
+      </div>
+      <h1 class="legal-title">Privacy Policy</h1>
+      <p class="legal-subtitle">
+        Your privacy is important to us. Learn how Beyond Green & Nature collects, uses, and safeguards your personal and project information.
+      </p>
+      <span class="legal-last-updated">Last Updated: September 2026</span>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="legal-content-section">
+    <div class="legal-container">
+
+      <!-- Navigation Sidebar -->
+      <aside class="legal-sidebar">
+        <div class="legal-sidebar-title">Quick Navigation</div>
+        <ul class="legal-sidebar-nav">
+          <li><a href="#section-1" class="active">1. Introduction</a></li>
+          <li><a href="#section-2">2. Info We Collect</a></li>
+          <li><a href="#section-3">3. How We Use Info</a></li>
+          <li><a href="#section-4">4. Data Protection</a></li>
+          <li><a href="#section-5">5. Cookies Policy</a></li>
+          <li><a href="#section-6">6. Third-Party Sharing</a></li>
+          <li><a href="#section-7">7. Your Rights</a></li>
+          <li><a href="#section-8">8. Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Body -->
+      <main class="legal-body">
+
+        <!-- Section 1 -->
+        <article id="section-1" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">1</span>
+            Introduction
+          </h2>
+          <p>
+            Welcome to <strong>Beyond Green & Nature</strong> ("we," "our," or "us"). We are committed to protecting your privacy and ensuring that your personal information is handled in a safe, responsible manner.
+          </p>
+          <p>
+            This Privacy Policy outlines how we collect, use, disclose, and protect personal data when you visit our website, inquire about our landscape design and maintenance services, or engage with our team.
+          </p>
+          <div class="highlight-box">
+            <p>By accessing our website or utilizing our landscaping services, you acknowledge and agree to the practices described in this policy.</p>
+          </div>
+        </article>
+
+        <!-- Section 2 -->
+        <article id="section-2" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">2</span>
+            Information We Collect
+          </h2>
+          <p>We may collect personal information directly from you when you fill out contact forms, request site visits, or communicate with us.</p>
+          <ul>
+            <li><strong>Contact Details:</strong> Your name, phone number, email address, and physical site address.</li>
+            <li><strong>Project Information:</strong> Site dimensions, architectural preferences, garden layout notes, and budget scope.</li>
+            <li><strong>Technical Data:</strong> IP address, browser type, device information, and website interaction logs.</li>
+            <li><strong>Communication Records:</strong> Messages sent via our WhatsApp widget, contact form submissions, or email inquiries.</li>
+          </ul>
+        </article>
+
+        <!-- Section 3 -->
+        <article id="section-3" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">3</span>
+            How We Use Your Information
+          </h2>
+          <p>We use the information we collect strictly for legitimate business purposes, including:</p>
+          <ul>
+            <li>Providing customized landscape design proposals, execution estimates, and AMC services.</li>
+            <li>Scheduling site inspections and consultation visits with our landscape architects.</li>
+            <li>Responding to customer service inquiries and technical questions.</li>
+            <li>Sending project updates, maintenance reminders, and seasonal garden care tips.</li>
+            <li>Improving our website layout, performance, and client user experience.</li>
+          </ul>
+        </article>
+
+        <!-- Section 4 -->
+        <article id="section-4" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">4</span>
+            Data Protection & Security
+          </h2>
+          <p>
+            We implement appropriate technical and organizational security measures to protect your personal data from unauthorized access, loss, misuse, or alteration.
+          </p>
+          <p>
+            All electronic site inquiries and client records are stored securely, and access is restricted to authorized personnel who require the data for project fulfillment.
+          </p>
+        </article>
+
+        <!-- Section 5 -->
+        <article id="section-5" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">5</span>
+            Cookies & Tracking Technologies
+          </h2>
+          <p>
+            Our website uses basic cookies to enhance navigation, analyze visitor traffic trends, and optimize site loading speeds.
+          </p>
+          <p>
+            You can choose to disable cookies through your browser settings at any time; however, some site features may operate with reduced functionality.
+          </p>
+        </article>
+
+        <!-- Section 6 -->
+        <article id="section-6" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">6</span>
+            Third-Party Sharing
+          </h2>
+          <p>
+            <strong>We do not sell, rent, or trade your personal information</strong> to third-party marketing companies.
+          </p>
+          <p>
+            Information may only be shared with trusted third-party service vendors (such as logistics partners delivering plants/irrigation supplies to your site) solely to fulfill your project contract.
+          </p>
+        </article>
+
+        <!-- Section 7 -->
+        <article id="section-7" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">7</span>
+            Your Privacy Rights
+          </h2>
+          <p>You have full rights regarding your personal information, including:</p>
+          <ul>
+            <li>The right to request access to the personal data we hold about you.</li>
+            <li>The right to request correction or updating of inaccurate information.</li>
+            <li>The right to request deletion of your contact records from our database.</li>
+            <li>The right to opt-out of newsletter communications at any time.</li>
+          </ul>
+        </article>
+
+        <!-- Section 8 -->
+        <article id="section-8" class="legal-card">
+          <h2 class="legal-card-heading">
+            <span class="badge-num">8</span>
+            Contact Information
+          </h2>
+          <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please feel free to reach out to us:</p>
+          
+          <div class="contact-box">
+            <h4>Beyond Green & Nature</h4>
+            <p><strong>Address:</strong> A-5, Kalapurnam Complex, Nr. Municipal Market, C.G Road, Ahmedabad, Gujarat - 380009</p>
+            <p><strong>Phone:</strong> <a href="tel:+918849637315">+91 88496 37315</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@beyondgreenandnature.in">info@beyondgreenandnature.in</a></p>
+          </div>
+        </article>
+
+      </main>
+    </div>
+  </section>
+
+  <!-- Shared Footer Placeholder -->
+  <footer class="footer">
+    <div id="footer-placeholder"></div>
+  </footer>
+
+  <script src="theme-loader.js"></script>
+
+</body>
+</html>
